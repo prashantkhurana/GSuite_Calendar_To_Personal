@@ -1,0 +1,13 @@
+function addToPersonal() {
+  var tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);  
+  
+  var calendarPersonal = CalendarApp.getCalendarById("personal_email");
+  var calendarGSuite = CalendarApp.getDefaultCalendar();
+  
+  var events = calendarGSuite.getEventsForDay(tomorrow);
+  for(var j = 0; j < events.length; j++) {
+    calendarPersonal.createEvent(events[j].getTitle(), events[j].getStartTime(), events[j].getEndTime());
+  }
+  GmailApp.sendEmail("gSuite_email", "copied" + events.length +" events." , "");
+}
