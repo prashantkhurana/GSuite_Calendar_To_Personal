@@ -22,7 +22,7 @@ It also adds a user customizable name to each calendar. So, yes you cannot say "
 
 4) Copy the contents of [google_home_mutiple_calendars.txt](google_home_mutiple_calendars.txt)  and paste them over in the editor shown. 
 
-![Example screenshot](screenshots/timer.png) 
+![Example screenshot](screenshots/multiple_calendars.png) 
 
 5) Change calendarsWithName variable with appropriate name and email addresses. Make sure the calendars of these email addresses are shared with the account you are using to write the script. An example of the variable is :
 
@@ -36,7 +36,7 @@ It also adds a user customizable name to each calendar. So, yes you cannot say "
 
 7) Go to Resources -> Current project triggers and add a trigger. Add a timer trigger, for the script to run once in a day. For example, I have set it to run everyday between 8 and 9 pm. It will copy tomorrow's event in this run.  Choose a time suitable for you. 
 
-![Example Screenshot](screenshots/trigger.png) 
+![Example Screenshot](screenshots/timer.png) 
 
 **Please note that if you run this script multiple times in a day, it will create duplicate calendar events i.e. this is not a smart script. Hence choose whatever time suits you the best**
 
