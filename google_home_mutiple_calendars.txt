@@ -1,0 +1,31 @@
+function addToGoogleHome() {
+    var map = {
+        "work": "work_email,
+        "school": "school_email",
+        "Justin": "Justin's_email",
+        "Roy": "Roy's_email"
+    };
+    var google_home_email = "personal_email/google_home_email";
+    var googleHomeCalendar = CalendarApp.getCalendarById(google_home_email);
+
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    var num_events = 0;
+
+    for (var i in map) {
+        var calendarToCopy = CalendarApp.getCalendarById(map[i]);
+        var name = i;
+
+        if (map.size == 1) {
+            name = "";
+        }
+        var events = calendarToCopy.getEventsForDay(tomorrow);
+        for (var j = 0; j < events.length; j++) {
+            googleHomeCalendar.createEvent(name + " " + events[j].getTitle(), events[j].getStartTime(), events[j].getEndTime());
+        }
+        num_events = num_events + events.length;
+    }
+
+    GmailApp.sendEmail(google_home_email, "copied" + num_events + " events.", "");
+}
