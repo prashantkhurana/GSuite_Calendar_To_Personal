@@ -1,5 +1,5 @@
 function addToGoogleHome() {
-    var map = {
+    var calendarsWithName = {
         "work": "work_email,
         "school": "school_email",
         "Justin": "Justin's_email",
@@ -13,11 +13,11 @@ function addToGoogleHome() {
 
     var num_events = 0;
 
-    for (var i in map) {
-        var calendarToCopy = CalendarApp.getCalendarById(map[i]);
+    for (var i in calendarsWithName) {
+        var calendarToCopy = CalendarApp.getCalendarById(calendarsWithName[i]);
         var name = i;
 
-        if (map.size == 1) {
+        if (calendarsWithName.size == 1) {
             name = "";
         }
         var events = calendarToCopy.getEventsForDay(tomorrow);
