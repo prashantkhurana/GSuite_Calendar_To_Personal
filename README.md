@@ -16,7 +16,7 @@ It also adds a user customizable name to each calendar. So, yes you cannot say "
 
 1) We will be writing the script in G Suite account. You can choose any account you want, all that is required is that all the calendars you wish you use should be shared with this 1 common account. From now on I am assuming I am logged into my G Suite account.
 
-2) Give access of your all calendars Gsuite calendar. To do that, follow the instructions over [here](https://support.google.com/calendar/answer/37082?hl=en-GB). Provide "Make changes to events" permission. This is required to create events.
+2) Give access of your all calendars Gsuite calendar (this includes the Google home calendar too). To do that, follow the instructions over [here](https://support.google.com/calendar/answer/37082?hl=en-GB). Provide "Make changes to events" permission. This is required to create events.
 
 3) Go to [apps script page](https://script.google.com/intro). **Make sure you are logged in with your G Suite account.**
 
