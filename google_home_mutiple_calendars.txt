@@ -2,7 +2,7 @@ function addToGoogleHome() {
     var calendarsWithName = {
         "work": "work_email,
         "school": "school_email",
-        "Justin": "Justin's_email",
+        "podcast" : "podcast_calendar_id"
         "Roy": "Roy's_email"
     };
     var google_home_email = "personal_email/google_home_email";
