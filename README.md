@@ -14,6 +14,8 @@ It also adds a user customizable name to each calendar. So, yes you cannot say "
 
 **How to use** 
 
+1) The account you are using google home with should be a standard @gmail account. 
+
 1) The script needs to be written from GSuite calendar. 
 
 2) Give access of you Google Home calendar to your GSuite account. To do that, follow the instructions over [here](https://support.google.com/calendar/answer/37082?hl=en-GB). Provide "Make changes to events" permission. This is **required** to create events.
